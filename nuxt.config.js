@@ -34,7 +34,7 @@ module.exports = {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: address.CDN_ADDRESS + 'favicon.ico'
+        href: '/favicon.ico'
       }
     ]
   },

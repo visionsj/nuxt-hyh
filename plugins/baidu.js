@@ -1,6 +1,6 @@
 /**
-  * 只在生产模式下使用
-  */
+ * 百度统计工具只在生产模式下使用
+ */
 
 if (process.env.NODE_CONFIG === 'prod') {
   let _hmt = _hmt || [];
@@ -11,14 +11,9 @@ if (process.env.NODE_CONFIG === 'prod') {
     s.parentNode.insertBefore(hm, s)
   })(window.document)
 
-  /*
-   *  应用挂载后
-   */
-
+  // 应用挂载后
   window.onNuxtReady(app => {
-    /*
-     * 每次页面路由切换
-     */
+    // 每次页面路由切换
     app.$nuxt.$on('routeChanged', (to, from) => {
       _hmt.push(['_trackPageview', to.fullpath])
     })

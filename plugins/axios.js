@@ -1,21 +1,21 @@
 import * as axios from 'axios'
 import address from '../config'
-console.log(address)
+
 let options = {
-  timeout: 5000,
-  withCredentials: true,
+  timeout: 5000, // 超时时间
+  withCredentials: true, // 发送跨域请求
   headers: {
-    post: {
-      'Content-Type': 'application/json'
-    }
+    post: {'Content-Type': 'application/json'} // 设置请求
   },
-  params: +new Date()
+  params:{
+  	t: +new Date() // 解决请求缓存
+  }
 }
-// The server-side needs a full url to works
-if (!process.browser) {
+
+// 在服务端渲染时需要所有路径
+if (process.server) {
   options.baseURL = address.SERVER_ADDRESS
 }
 
-console.log(`axios ${process.browser}`, options)
 
 export default axios.create(options)

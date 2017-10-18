@@ -206,7 +206,7 @@
         </el-form-item>
         <div class="contact-info">
           <div class="contact-info-title">
-            <h3>联系人信息</h3>
+            <h3>联系人信息ssssssssssssssss</h3>
           </div>
           <ul class="form-col">
             <li>
@@ -420,6 +420,7 @@
       }
     },
     async asyncData ({params}) {
+      console.log(params)
       let args = utils.parseParams(params, 'id')
       let expertId = args[0]
       let expertType = args[1]

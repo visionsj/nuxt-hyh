@@ -2,7 +2,7 @@ import login from '~/plugins/checkLogin'
 import axios from '~/plugins/axios'
 
 export default function ({ isServer, store, req }) {
-  if (isServer && !req) { return }
+  if (isServer) { return } // 在服务端跳出执行，校验登录在客户端执行
 
   login.hasLogin()
     .then(data => {

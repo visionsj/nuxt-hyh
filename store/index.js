@@ -6,7 +6,7 @@ import user from './user'
 import release from './release'
 import demandOrder from './demandOrder'
 
-const createStroe = () => {
+const createStore = () => {
   return new Vuex.Store({
     modules: {
       footer,
@@ -19,4 +19,4 @@ const createStroe = () => {
   })
 }
 
-export default createStroe
+export default createStore

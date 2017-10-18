@@ -14,16 +14,6 @@ module.exports = {
         NODE_CONFIG: 'dev',
         NODE_ENV: 'development'
       },
-      env_test: {
-        PORT: 3000,
-        NODE_CONFIG: 'test',
-        NODE_ENV: 'production'
-      },
-      env_pre: {
-        PORT: 3000,
-        NODE_CONFIG: 'pre',
-        NODE_ENV: 'production'
-      },
       env_prod: {
         PORT: 3000,
         NODE_CONFIG: 'prod',

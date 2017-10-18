@@ -1,8 +1,6 @@
 import Vue from 'vue'
 
 const ElementUI = require('element-ui')
-
-// 必须要写这个语言包 不写将没有任何效果
-const locale = require('element-ui/lib/locale/lang/zh-CN')
+const locale = require('element-ui/lib/locale/lang/zh-CN') // 引入语言包
 
 Vue.use(ElementUI, { locale })
