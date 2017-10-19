@@ -1,47 +1,44 @@
 <template>
-  <div>
-    <section class="error">
-      <div class="website-container text-center">
-        <img src="~assets/img/404.png"/>
-
-        <div class="tip">
-          <p>矮油！您迷路了... </p>
-          <p>很抱歉您访问的页面不存在！</p>
-          <nuxt-link to="/">
-            <el-button type="primary">回到首页</el-button>
-          </nuxt-link>
-        </div>
-      </div>
-    </section>
-  </div>
+	<div>
+		<top/>
+		<my-header/>
+	    <nuxt/>
+	    <my-footer/>
+	    <login/>
+	</div>
 </template>
 
 <script>
-  import Top from '~/components/Top.vue'
-  import MyHeader from '~/components/Header.vue'
-  import MyFooter from '~/components/Footer.vue'
-  import Login from '~/components/Login.vue'
+import top from '~/components/top.vue'
+import myHeader from '~/components/header.vue'
+import myFooter from '~/components/footer.vue'
+import login from '~/components/login.vue'
 
-  export default {
-    components: {
-      Top,
-      MyHeader,
-      MyFooter,
-      Login
-    }
-  }
+export default {
+	data() {
+		return {
+			
+		}
+	},
+	components: {
+		top,
+		myHeader,
+		myFooter,
+		login
+	},
+	mounted() {
+
+	},
+	destroyed() {
+
+	},
+	methods: {
+
+	}
+}
 </script>
 
-<style lang="scss" scoped>
-  .error {
-    padding-top: 65px;
-    border-top: 2px solid #2788e8;
-  }
+<style lang="scss" type="text/scss" rel="stylesheed/scss" scoped>
+	
 
-  .tip {
-    font-size: 34px;
-    color: #343434;
-    // margin-top: 65px;
-    padding: 65px 0;
-  }
 </style>

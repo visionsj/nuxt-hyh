@@ -2,6 +2,7 @@ import Vue from 'vue'
 import address from '~/config'
 
 const filters = [
+  // 图片添加上CDN路径
   {
     name: 'imgCdn',
     fn (val) {
@@ -12,6 +13,7 @@ const filters = [
       }
     }
   },
+  // 数字截取
   {
     name: 'cut_str',
     fn (str = '', L = 8) {

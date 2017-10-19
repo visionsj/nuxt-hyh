@@ -6,17 +6,17 @@
 const NODE_ENV = {
   dev: {
     // CDN 服务器
-    CDN_ADDRESS: 'http://127.0.0.1:3000/_nuxt/',
+    CDN_ADDRESS: 'http://127.0.0.1:8089/',
     // API 服务器
-    SERVER_ADDRESS: 'http://webapi.jtt.com',
+    SERVER_ADDRESS: 'http://127.0.0.1:7083',
     // 认证中心
-    USERCENTER_ADDRESS: 'http://test-uc3.dev.com',
+    USERCENTER_ADDRESS: 'http://uc3.dev.com',
     // 中台地址
-    CENTER_ADDRESS: 'http://center.jtt.com',
-    // 上传地址
-    UPLOAD_ADDRESS: 'http://image5.jm.com',
+    CENTER_ADDRESS: 'https://ecenter.jumore.test2',
     // 图片服务器
-    IMG_ADDRESS: 'http://image.jm.com'
+    IMG_ADDRESS: 'https://image.jumore.test',
+    // 图片上传服务器
+    UPLOAD_ADDRESS: 'http://image5.jm.com'
   },
   test: {
     // CDN 服务器

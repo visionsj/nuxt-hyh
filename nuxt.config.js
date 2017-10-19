@@ -13,7 +13,7 @@ module.exports = {
  	cache: true, // 缓存
  	transition: 'page', // 页面过渡
  	// css
- 	css: ['~/node_modules/element-ui/lib/theme-default/index.css', '~/assets/css/main.css'],
+ 	css: ['~/node_modules/mint-ui/lib/style.css', '~/assets/css/main.css'],
  	// 设置HEAD标签
  	head: {
     title: '网站标题',
@@ -60,7 +60,7 @@ module.exports = {
   },
  	// plugins
  	plugins: [
- 		'~plugins/element-ui',
+ 		'~plugins/mint-ui',
     '~plugins/filter',
     '~plugins/directive',
     '~plugins/checkLogin',
@@ -73,12 +73,11 @@ module.exports = {
       css: 'styles.[chunkhash].css'
     },
     extractCSS: true, // 分离CSS
-    vendor: ['axios', 'element-ui'], // 预打包
+    vendor: ['axios', 'mint-ui'], // 预打包
     babel: {
       plugins: [
         ['component', [{
-          libraryName: 'element-ui',
-          styleLibraryName: 'theme-default'
+          libraryName: 'mint-ui'
         }]]
       ]
     },
